@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@media(max-width:1100px){
+    .right-col, .search-box{
+        display: none;
+    }
+}
 
 *{
     margin: 0;
@@ -38,6 +43,9 @@ body{
     justify-content: space-between;
     align-items: center;
 
+}
+.nav-wrapper, .wrapper{
+    width: 90%;
 }
 
 .brand-img{
@@ -94,7 +102,8 @@ body{
     max-width: 1000px;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-gap: 30px;
+    grid-gap: 40px;
+    border-radius: 50%;
 }
 
 .left-col{
@@ -107,8 +116,8 @@ body{
     height: 120px;
     background: #fff;
     border: 1px solid #dfdfdf;
-    border-radius: 2px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 50px;
     padding-right: 0;
     display: flex;
     align-items: center;
@@ -312,12 +321,13 @@ body{
     border: 2px solid #fff;
 }
 
-.username{
+.username {
     width: 100%;
     overflow: hidden;
-    text-align: center;
+    text-align:justify;
     font-size: 12px;
     margin-top:5px;
+    margin-right: auto;
     color: rgba(0, 0, 0, 0.5)
 }
 
@@ -342,4 +352,55 @@ body{
     font-weight: 700;
     margin: 20px 0;
 }
+.right-col{
+    padding: 20px;
+}
+.profile-card{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
+.profile-card .profile-picture{
+    flex: 0 0 auto;
+    padding: -10px;
+    background: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
 
+.profile-card:first-child .profile-pic{
+    width: 70px;
+    height: 70px;
+}
+
+.profile-card .profile-pic img{
+    border: none;
+}
+
+.profile-card .username{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+.sub-text{
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top:5px ;
+}
+.action-btn{
+    opacity: 1;
+    font-weight: 600;
+    font-size: 13px;
+}
+.suggestion-text{
+    font-size: 15px;
+    font-weight: 600px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 25px 0;
+}
